@@ -232,6 +232,7 @@ function DayScreen({ dayName, notifications = [] }) {
             value={checkboxChecked}
             onValueChange={setCheckboxChecked}
             style={styles.checkbox}
+            label='Completed'
           />
         </View>
       </View>
@@ -382,9 +383,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 15,
+    color: 'white',
   },
   checkbox: {
     marginRight: 10,
+    color: 'white',
   },
   checkboxLabel: {
     color: 'white',
